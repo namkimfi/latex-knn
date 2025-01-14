@@ -1,0 +1,94 @@
+%\documentclass[12pt]{article}
+\documentclass[aip,graphicx,preprint]{revtex4-1}
+\RequirePackage{graphicx}
+\usepackage{colortbl}
+\usepackage[version-1-compatibility]{siunitx}
+%\usepackage{ulem}16
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{bm}
+\usepackage{color}
+\usepackage{ulem}
+\begin{document}
+%\usepackage{amsmath}
+%\usepackage{amssymb}
+%\usetikzlibrary{positioning, calc}
+%\usepackage{tikz}
+
+%\title{review of the paper (Seebeck.., Verma, submitted JLTP)}
+
+\section*{Title}
+Abstract on knn-assisted transport measurement
+
+
+\section{General comments}
+
+\section{Questions and comments}
+-Concerning the theoretical model, temperature is defined exclusively within the reservoirs, and there appears to be no defined temperature for Quantum Dots (QDs). To the best of the reviewer's understanding, in this context, the temperature of the QD is assumed to be zero. It should be noted that the outcomes presented in Fig. 1, specifically Fig. 1(c), may not be practically relevant due to the possible finite temperature effects on the quantum dot. In this regard, it is plausible that the ability of the QD to select energy may be reduced with an increase in ambient temperature.\\
+-The reviewer is intrigued about the possible effects of gate voltages on the electron-hole (e-h) symmetry of the Andreev bound state. If this symmetry were disrupted, the Andreev current could potentially contribute to Peltier cooling. If this hypothesis is confirmed, certain expressions in the manuscript would need to be modified since the current analysis assumes e-h symmetry.\\
+-To enhance clarity, it is recommended to include a circuit diagram illustrating the current and heat flow direction. This addition will aid in comprehending the open circuit expression, particularly the reference to the `accumulation of electrons on the right reservoir.' Otherwise, the inclusion of a closed-circuit diagram featuring a load resistance could be beneficial. Such an illustration would facilitate a better experimental understanding of equation (18) and concepts like thermal power (S), thermal conductivity (K), and power output (P).\\
+-The meaning of `non-linear' regarding the data of Fig.2 is not clear in the following statement ``.. Andreev Joule heating, as well as that of quasiparticle contribution to the heat current (energy carried by quasiparticles + Joule heating) in Eq, (17), appear only in the nonlinear regime''. If the linear regime refers to the linear region with $J_Q$ vs $eV$ curve, the heating and cooling processes appear to work in the linear region in Fig. 2.\\
+-As $\Gamma_0$ is used as the energy unit in Fig. 1, it is likely that the $y-$axis is expressed in $\Gamma_0$-based units. However, the scaling of $P_\text{max}$ in Fig. 1 adopts the fW unit.\\
+-In the 2nd paragraph of the section 3, the phrase of `beyond the linear response regime' is not clear in the following statement, ``Fig. 1 shows the variation ... beyond the linear response regime''. The definition of the linear response regime is required.\\
+-The following statement needs to be supported by data, `` ... Andreev tunneling does not contribute to the creation of thermovoltage .. and only suppresses it within the superconducting energy gap. Further, the proximity-induced superconducting gap does not affect the thermoelectric transport properties for the parameter regimes considered in the present work ''. This statement cannot be deduced only from Fig. 1. In addition, the following statement also needs to be supported by a data set, ``$P_\text{max}$ and $\eta_{P_\text{max}}$ shown here are generated completely by the quasiparticle tunneling close to the superconducting energy gap edge..'' .\\
+- Regarding Fig. 1(c), the reviewer requests clarification on whether the temperature dependent BCS gap formula has been employed.\\
+-  $\eta_\text{Pmax}$ term should be replaced by the maximum of $\eta_\text{Pmax}$ or $(\eta_\text{Pmax})_\text{max}$ in the following statement ``the NQDS system is greater as compared to the NQDN system, with $\eta_\text{Pmax} \approx 50 \% \eta_C$ as shown in Fig. 1(b). As $\Delta_0$ is increased from 0.5$\Gamma_0$ to $\Gamma_0$, the value of $\eta_\text{Pmax}$ remains almost constant''.  In addition,  $P_\text{max}$ term  also must be expressed either by $({P_\text{max}})_\text{max}$ or the maximum of $P_\text{max}$.\\
+-The formula for $\eta_{CA}$ should be presented, for instance $\eta_C=1-\sqrt{(T-\theta)/T)}$.\\
+-The reviewer didn't understand the following statement,  ``...larger thermal gradient $k_B\theta$ reduced both $P_\text{max}$ and $\eta_\text{Pmax}$'' in the conclusion section. Please help him understand how larger thermal gradient $k_B\theta$ could reduce both $P_\text{max}$  and $\eta_\text{Pmax}$.\\
+
+
+\section{List of typo}
+
+-$P_{max}$ $\rightarrow$  $P_\text{max}$ \\
+-In the 1st line of page 9,  $\eta_\text{Pmax}$ $\rightarrow$  the maximum of $P_\text{max}$ or $(P_\text{max})_\text{max}$.\\
+-$P_\text{max}$ $\rightarrow$ $(P_\text{max})_{max}$ in various places.\\
+-Eq, (17) $\rightarrow$  Eqn (17)\\
+-Power $\rightarrow$ power, $0.3\Gamma_0$ $\rightarrow$ $0.3\Delta_0$ in 1st paragraph of page 9,  ``The normalized $\eta_\text{Pmax}$ can reach upto 58$\% \eta_C$ with Power output $\approx 35$ fW for $k_\text{B} T = 0.3\Gamma_ 0$ and $k_\text{B}\theta = 0.1\Gamma_0$ .''\\
+-``Fig. 1 shows the variation'' $\rightarrow$  ``Figure 1 shows the variation…''\\
+-Fig. 2$\rightarrow$  Figure 2\\
+-(b) $\rightarrow$  (d) in the caption of Fig. 2\\
+
+
+
+
+
+
+
+
+
+%\section*{\hfil INTRODUCTION \hfil}
+
+
+
+% trigger a \newpage just before the given reference
+% number - used to balance the columns on the last page
+% adjust value as needed - may need to be readjusted if
+% the document is modified later
+%\IEEEtriggeratref{8}
+% The "triggered" command can be changed if desired:
+%\IEEEtriggercmd{\enlargethispage{-5in}}
+
+% references section
+% NOTE: BibTeX documentation can be easily obtained at:
+% http://www.ctan.org/tex-archive/biblio/bibtex/contrib/doc/
+
+% can use a bibliography generated by BibTeX as a .bbl file
+% standard IEEE bibliography style from:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/supported/IEEEtran/bibtex
+%\bibliographystyle{IEEEtran.bst}
+% argument is your BibTeX string definitions and bibliography database(s)
+%\bibliography{IEEEabrv,../bib/paper}
+%
+% <OR> manually copy in the resultant .bbl file
+% set second argument of \begin to the number of references
+% (used to reserve space for the reference number labels box)
+%\begin{thebibliography}{99}
+
+%\bibitem{STARMARK}
+%Orvil Scully, Marlan, and Muhammad Suhail Zubairy. ``Quantum Optics'' (1997): 652.
+%\end{thebibliography}
+
+
+
+\end{document}
